@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Green Meter App — Project</title>
+<meta name="description" content="A Python-built interactive emissions calculator, and how AI was used to debug and build it.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a href="index.html" class="brand"><span class="dot"></span>Portfolio</a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="project.html" class="active">Project</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="https://green-meter.netlify.app/" class="nav-links-secondary-cta" target="_blank" rel="noopener" style="color:var(--text-muted);text-decoration:none;font-size:0.92rem;font-weight:500;margin-right:4px;">Live app</a>
+      <a href="https://github.com/Shaikh-Ashmaan/greenmeter" class="nav-cta" target="_blank" rel="noopener">View repo →</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" style="padding: 56px 0 40px;">
+  <div class="wrap">
+    <div class="eyebrow">Project</div>
+    <h1 class="claim" style="font-size: clamp(1.6rem, 3.4vw, 2.3rem);">Green Meter App</h1>
+    <p class="subclaim">An interactive Python dashboard that calculates a company's estimated CO2e emissions from fleet, facility, and subcontractor activity, then models a reduction scenario against it in real time.</p>
+    <div class="hero-actions">
+      <a href="https://green-meter.netlify.app/" class="btn btn-primary" target="_blank" rel="noopener">Try the live app →</a>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="section-label">What it does</div>
+    <h2 class="section-title">Activity data in, two numbers out</h2>
+    <p class="lede">Ten inputs — car/truck/bus distance, forklift hours, cargo flight time, office lighting/heating/cooling/computing energy, and subcontractor estimates — are each multiplied by a fixed emissions factor and summed into a baseline. Three sliders (EV share, distance reduction, cargo load factor) recompute an optimized total against the same inputs, so a viewer can see the effect of a policy change instantly instead of re-running a spreadsheet.</p>
+
+    <div class="section-label" style="margin-top:8px;">Stack</div>
+    <ul class="stack-list">
+      <li>Python</li>
+      <li>Interactive dashboard UI</li>
+      <li>Chart / pie visualization</li>
+      <li>AI-assisted debugging</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-label">Case study</div>
+    <h2 class="section-title">How AI was used, and how I checked it</h2>
+
+    <div class="case-block">
+      <span class="status-tag progress">In progress</span>
+      <h3>Write-up not finished yet</h3>
+      <p>This is the section that matters most for the claim on the home page — a specific bug, the AI suggestion I got, and why I accepted or rejected it. I haven't written it up honestly yet, so it isn't faked here. It's on the "still ugly" list on the About page and it's the next thing I'm doing, before polishing anything else.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-label">Screenshots</div>
+    <h2 class="section-title">The app, running with real input data</h2>
+
+    <div class="figure">
+      <img src="images/inputs-baseline.png" alt="Green Meter App input panel with ten activity data fields, plus emission share pie chart and baseline vs optimized bar chart">
+      <div class="figure-caption">Full input panel — ten activity categories, each with its own emissions factor shown inline.</div>
+    </div>
+
+    <div class="figure">
+      <img src="images/sliders-detail.png" alt="Green Meter App adjustment sliders for EV share, KM reduction, and cargo plane load factor">
+      <div class="figure-caption">Adjustment sliders — EV Share for Cars, KM Reduction, Cargo Planes Load Factor, each labeled with what it actually does to the calculation.</div>
+    </div>
+
+    <div class="figure">
+      <img src="images/optimized-result.png" alt="Green Meter App showing baseline 3346.2 tons CO2e reduced to optimized 1909.0 tons CO2e">
+      <div class="figure-caption">Result after adjustment — baseline 3,346.2 t down to 1,909.0 t CO2e, about a 43% cut.</div>
+    </div>
+
+    <div class="assumptions">
+      Factors: Cars 0.18 kg/km · Trucks 0.90 kg/km · Buses 1.10 kg/km · Forklifts 4.0 kg/h · Planes 9000 kg/h · Lighting 0.42 kg/kWh · Cooling 0.42 kg/kWh · Computing 0.42 kg/kWh · Heating 0.20 kg/kWh-th. EV cars emit 70% less than gasoline cars. Plane load factor scales aircraft emissions linearly.
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-label">Not built yet</div>
+    <h2 class="section-title">Honest gaps</h2>
+    <ul class="plain-list">
+      <li>No "before" screenshot with sliders at 0%, so the before/after effect isn't shown side by side yet, only the two end states.</li>
+      <li>This week's internship track work is still in progress, not reflected here yet.</li>
+    </ul>
+  </div>
+</section>
+
+<section style="border-bottom:none;">
+  <div class="wrap">
+    <div class="cta-banner">
+      <div>
+        <h3>See exactly how this was built.</h3>
+        <p>Commit messages, not a highlight reel — including the ones where I reverted an AI suggestion.</p>
+      </div>
+      <a href="https://github.com/Shaikh-Ashmaan/greenmeter" class="btn btn-primary" target="_blank" rel="noopener">View commit history →</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-note">Built with Python. Debugged with AI. Verified by me.</div>
+    <a href="https://green-meter.netlify.app/" class="nav-links-secondary-cta" target="_blank" rel="noopener" style="color:var(--text-muted);text-decoration:none;font-size:0.92rem;font-weight:500;margin-right:4px;">Live app</a>
+      <a href="https://github.com/Shaikh-Ashmaan/greenmeter" class="nav-cta" target="_blank" rel="noopener">View repo →</a>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio — Green Meter App</title>
+<meta name="description" content="I write working Python code and use AI like a senior engineer would — as a debugging partner, not a source I copy.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a href="index.html" class="brand"><span class="dot"></span>Portfolio</a>
+    <div class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="project.html">Project</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="https://green-meter.netlify.app/" class="nav-links-secondary-cta" target="_blank" rel="noopener" style="color:var(--text-muted);text-decoration:none;font-size:0.92rem;font-weight:500;margin-right:4px;">Live app</a>
+      <a href="https://github.com/Shaikh-Ashmaan/greenmeter" class="nav-cta" target="_blank" rel="noopener">View repo →</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow">Aspiring Cybersecurity Engineer</div>
+    <h1 class="claim">I write working Python code and use AI like a senior engineer would — as a <span class="accent">debugging partner</span> I verify, not a source I copy.</h1>
+    <p class="subclaim">Grade 12 · building toward a junior cybersecurity engineering role. The Green Meter App is the proof: an interactive Python emissions calculator, built and debugged with AI as a working partner.</p>
+    <div class="hero-actions">
+      <a href="https://github.com/Shaikh-Ashmaan/greenmeter" class="btn btn-primary" target="_blank" rel="noopener">View commit history →</a>
+      <a href="https://green-meter.netlify.app/" class="btn btn-secondary" target="_blank" rel="noopener">Try the live app →</a>
+      <a href="project.html" class="btn btn-secondary">See the full build</a>
+    </div>
+
+    <div class="metric-row">
+      <div class="metric-card">
+        <div class="metric-label">Baseline CO2e</div>
+        <div class="metric-value yellow">3,346.2<span class="mono" style="font-size:0.9rem;color:var(--text-muted);"> t</span></div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-label">Optimized CO2e</div>
+        <div class="metric-value green">1,909.0<span class="mono" style="font-size:0.9rem;color:var(--text-muted);"> t</span></div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-label">Reduction modeled</div>
+        <div class="metric-value green">~43%</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-label">Input categories</div>
+        <div class="metric-value">10</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="section-label">Proof snapshot</div>
+    <h2 class="section-title">One run of the app, start to finish</h2>
+    <p class="lede">Ten activity inputs — fleet distance, forklift hours, office energy, subcontractor estimates — feed a baseline calculation. Three adjustment sliders (EV share, distance reduction, cargo load factor) model an optimized scenario against it. This is the actual output, not a mockup.</p>
+
+    <div class="figure">
+      <img src="images/optimized-result.png" alt="Green Meter App showing baseline 3346.2 tons CO2e reduced to optimized 1909.0 tons CO2e after applying reduction sliders">
+      <div class="figure-caption">Baseline 3,346.2 t → Optimized 1,909.0 t CO2e, recalculated live from the sliders.</div>
+    </div>
+
+    <div class="hero-actions">
+      <a href="project.html" class="btn btn-secondary">Read the full case study →</a>
+      <a href="https://green-meter.netlify.app/" class="btn btn-secondary" target="_blank" rel="noopener">Open the live app →</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="cta-banner">
+      <div>
+        <h3>The reasoning is in the commits.</h3>
+        <p>Every fix, every AI suggestion I accepted or rejected, is logged there — not summarized here.</p>
+      </div>
+      <a href="https://github.com/Shaikh-Ashmaan/greenmeter" class="btn btn-primary" target="_blank" rel="noopener">View commit history →</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-note">Built with Python. Debugged with AI. Verified by me.</div>
+    <a href="https://green-meter.netlify.app/" class="nav-links-secondary-cta" target="_blank" rel="noopener" style="color:var(--text-muted);text-decoration:none;font-size:0.92rem;font-weight:500;margin-right:4px;">Live app</a>
+      <a href="https://github.com/Shaikh-Ashmaan/greenmeter" class="nav-cta" target="_blank" rel="noopener">View repo →</a>
+  </div>
+</footer>
+
+</body>
+</html>
